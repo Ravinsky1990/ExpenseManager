@@ -2,6 +2,7 @@
 
 exports[`should render ExpenseDAsh correctly 1`] = `
 <div>
+  <ExpensesSummary />
   <Connect(ExpenseListFilters) />
   <Connect(ExpenseList) />
 </div>
