@@ -1,5 +1,6 @@
 import * as firebase from "firebase";
 
+
 const config = {
     apiKey: "AIzaSyBMqHXxPV0IiCqygxmiTvZz-3qiZhfT5sA",
     authDomain:"expensemanager-2128d.firebaseapp.com",
@@ -12,8 +13,9 @@ const config = {
   firebase.initializeApp(config);
 
   const database = firebase.database()
+  const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
-  export{firebase, database as default}
+  export {firebase, googleAuthProvider, database as default}
 
 
   
